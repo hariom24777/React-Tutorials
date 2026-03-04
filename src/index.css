@@ -174,7 +174,7 @@ button:hover {
 }
 
 .stateLiftingContainer,
-.conditionalRenderingContainer, .eventHandlingContainer, .useEffectContainer {
+.conditionalRenderingContainer, .eventHandlingContainer, .useEffectContainer, .useContextContainer {
   margin: 2rem;
   padding: 2rem;
   background-color: #232427;
@@ -182,7 +182,7 @@ button:hover {
   border-radius: 8px;
 }
 
-.stateLifting, .conditionalRendering, .eventHandling, .useEffect{
+.stateLifting, .conditionalRendering, .eventHandling, .useEffect, .useContext{
   display: flex;
   flex-direction: column;
   gap: 1rem;
