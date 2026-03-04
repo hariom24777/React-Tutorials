@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1rem;
+  height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  background-color: #1b1b1b;
+  color: #f0f0f0;
+}
+
+/* h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  color: #c85b25;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgb(182, 182, 182);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+
+.linkArrow {
+  border: 1px solid #f0f0f0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  text-decoration: none;
+}
+
+.linkArrow span {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #f0f0f0;
+}
+
+.documentation {
+  margin: 2rem;
+}
+
+.docCardContainer {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.docCard {
+  background-color: #232427;
+  color: #f0f0f0;
+  width: 20rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #444648;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.docCard:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+  color: #c85b25;
+}
+
+.linkArrow:hover {
+  border: 1px solid #c85b25;
+}
+.linkArrow:hover span {
+  color: #c85b25;
+}
+
+.counterContainer {
+  margin: 2rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #232427;
+  border: 1px solid #444648;
+  border-radius: 8px;
+}
+
+.counterPara {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.counterBtnContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #44464882;
+  color: #b6b6b6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #484b50;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #444648;
+  border-top: 1px solid #444648;
+  margin: 1.5rem 0;
+}
+
+.navlinks {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.15rem;
+}
+
+.navlink:hover {
+  color: #c85b25;
+  transition: all 0.2s ease-in-out;
+}
+
+.stateLiftingContainer,
+.conditionalRenderingContainer, .eventHandlingContainer, .useEffectContainer {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #232427;
+  border: 1px solid #444648;
+  border-radius: 8px;
+}
+
+.stateLifting, .conditionalRendering, .eventHandling, .useEffect{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stateLifting input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid #444648;
+  color: #b6b6b6;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.stateLifting input:focus {
+  outline: none;
+  border: 1px solid #c85b25;
+  transition: all 0.2s ease-in-out;
+}
+
+.conditionalContent {
+  margin-top: 1rem;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: #b6b6b6;
+}
+
+.heroSection .reactLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: reactLogoAnimation 20s linear infinite;
+}
+
+.installationDoc {
+  margin: 2rem;
+}
+
+.installationHeadPara {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.installationHeadPara h4 {
+  font-size: 1.75rem;
+}
+
+.installationHeadPara p {
+  font-size: 1.15rem;
+}
+
+@keyframes reactLogoAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
