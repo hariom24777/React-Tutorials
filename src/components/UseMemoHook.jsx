@@ -19,7 +19,7 @@ const UseMemoHook = () => {
         <div className="">
           Count: <span>{count}</span>
         </div>
-        <button onClick={() => setCount(count + 1)}>Increament</button>
+        <button onClick={() => setCount(count + 1)}>Increment</button>
         <button onClick={() => setCount(0)}>Reset</button>
         <br />
 

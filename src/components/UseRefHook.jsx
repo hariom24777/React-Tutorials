@@ -46,7 +46,7 @@ const UseRefHook = () => {
       <div className="useRefHook">
         <h4>useRef Hook</h4>
         {/* <span>{count}</span>
-        <button ref={btnRef} onClick={handleIncreament}>
+        <button ref={btnRef} onClick={handleIncrement}>
           Increament
         </button>
 

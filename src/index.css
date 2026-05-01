@@ -41,14 +41,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   text-align: center;
   width: fit-content;
   margin: 1rem auto;
-  background-color: #c85b25d3;
+  background-color: #25c86640;
   padding: .35rem 1.15rem;
-  border: solid .1rem #c85b25;
+  border: solid .1rem #25c86658;
   border-radius: 1.25rem;
 }
 
@@ -148,7 +148,6 @@ p {
 
 button {
   padding: 0.75rem 1.5rem;
-  width: 40%;
   font-size: 1rem;
   background-color: #44464882;
   color: #b6b6b6;
