@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   margin: 1rem;
   height: 100vh;
@@ -35,8 +41,15 @@ h3 {
 }
 
 h4 {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 500;
+  text-align: center;
+  width: fit-content;
+  margin: 1rem auto;
+  background-color: #c85b25d3;
+  padding: .35rem 1.15rem;
+  border: solid .1rem #c85b25;
+  border-radius: 1.25rem;
 }
 
 p {
@@ -112,9 +125,10 @@ p {
 }
 
 .counterContainer {
-  margin: 2rem;
+  margin: 2rem auto;
+  width: 70%;
   margin-top: 4rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
   background-color: #232427;
   border: 1px solid #444648;
@@ -134,6 +148,7 @@ p {
 
 button {
   padding: 0.75rem 1.5rem;
+  width: 40%;
   font-size: 1rem;
   background-color: #44464882;
   color: #b6b6b6;
@@ -174,21 +189,24 @@ button:hover {
 }
 
 .stateLiftingContainer,
-.conditionalRenderingContainer, .eventHandlingContainer, .useEffectContainer, .useContextContainer {
-  margin: 2rem;
-  padding: 2rem;
+.conditionalRenderingContainer, .eventHandlingContainer, .useEffectContainer, .useContextContainer, .useRefContainer, .useMemoContainer, .useCallbackContainer{
+  margin: 2rem auto;
+  width: 70%;
+  padding: 4rem 2rem;
   background-color: #232427;
   border: 1px solid #444648;
   border-radius: 8px;
 }
 
-.stateLifting, .conditionalRendering, .eventHandling, .useEffect, .useContext{
+.stateLifting, .conditionalRendering, .eventHandling, .useEffect, .useContext, .useRefHook, .useMemo, .useCallback{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.stateLifting input {
+input {
   padding: 0.5rem;
   font-size: 1rem;
   background-color: transparent;
@@ -198,7 +216,7 @@ button:hover {
   margin-top: 1rem;
 }
 
-.stateLifting input:focus {
+input:focus {
   outline: none;
   border: 1px solid #c85b25;
   transition: all 0.2s ease-in-out;
@@ -252,3 +270,8 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+
+
+
+
+

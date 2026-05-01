@@ -4,7 +4,9 @@ const DocumentCard = (props) => {
   return (
     <>
       <div className="docCard">
-        <h4>{props.docTitle}</h4>
+        <div style={{
+          fontSize: '1.25rem', fontWeight:'600'
+        }}>{props.docTitle}</div>
         <p>{props.docDesc}</p>
           <a href={props.url} className="linkArrow">
             <span>↗</span>

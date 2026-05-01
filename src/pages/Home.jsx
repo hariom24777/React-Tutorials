@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div className="heroSection">
         <svg
-        className="reactLogo"
+          className="reactLogo"
           width="110px"
           height="110px"
           viewBox="0 0 32 32"
@@ -34,10 +34,14 @@ const Home = () => {
           </g>
         </svg>
         <h3>React</h3>
-        <div className="typewriterContainer"><h4 className="typewriterText">The library for web and native user interfaces</h4></div>
+        <div className="typewriterContainer">
+          <div style={{
+            fontSize: '1.25rem'
+          }}>
+            The library for web and native user interfaces
+          </div>
+        </div>
       </div>
-
-      
     </>
   );
 };

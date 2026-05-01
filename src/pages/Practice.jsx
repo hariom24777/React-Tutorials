@@ -5,6 +5,9 @@ import ConditionalRendering from "../components/ConditionalRendering";
 import EventHandling from "../components/EventHandling";
 import Countdown from "../components/Countdown";
 import ChildForUseContext from "../components/ChildForUseContext";
+import UseRefHook from "../components/UseRefHook";
+import UseMemoHook from "../components/UseMemoHook";
+import UseCallbackHook from "../components/UseCallbackHook";
 
 const UserContext = createContext();
 
@@ -44,6 +47,18 @@ const Practice = () => {
         <ChildForUseContext />
       </div>
       </UserContext.Provider>
+
+      <div className="useRefContainer">
+        <UseRefHook />
+      </div>
+
+      <div className="useMemoContainer">
+        <UseMemoHook />
+      </div>
+
+      <div className="useCallbackContainer">
+        <UseCallbackHook />
+      </div>
     </>
   );
 };
